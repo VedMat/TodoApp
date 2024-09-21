@@ -6,21 +6,24 @@ import { Container } from "@mui/material";
 import CompletedTodosPage from "./pages/CompletedTodosPage";
 import OpenTodosPage from "./pages/OpenTodosPage";
 import Header from "./components/Header";
+import { ThemeProvider } from "./context/ThemeContext";
 
 const App: React.FC = () => {
   return (
-    <TodoProvider>
-      <Router>
-        <Header />
-        <Container maxWidth="sm">
-          <Routes>
-            <Route path="/" element={<OpenTodosPage />} />
-            <Route path="/completed" element={<CompletedTodosPage />} />
-          </Routes>
-        </Container>
-        <Snackbar />
-      </Router>
-    </TodoProvider>
+    <ThemeProvider>
+      <TodoProvider>
+        <Router>
+          <Header />
+          <Container maxWidth="sm">
+            <Routes>
+              <Route path="/" element={<OpenTodosPage />} />
+              <Route path="/completed" element={<CompletedTodosPage />} />
+            </Routes>
+          </Container>
+          <Snackbar />
+        </Router>
+      </TodoProvider>
+    </ThemeProvider>
   );
 };
 
