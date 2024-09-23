@@ -1,46 +1,84 @@
-# Getting Started with Create React App
+ Gestore Todo con Dark Mode
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Questo progetto è una semplice applicazione To-Do List sviluppata con **React** e **Material UI**, con la gestione di **todo aperti** e **todo completati**, supporto per la **modalità Dark Mode** e navigazione tra pagine tramite **React Router**.
 
-## Available Scripts
+## Caratteristiche principali
+- **Gestione dei todo aperti**: Gli utenti possono aggiungere nuovi todo e visualizzare la lista di quelli ancora da completare.
+- **Gestione dei todo completati**: Una volta completati, i todo vengono spostati in una pagina separata.
+- **Dark Mode**: Gli utenti possono attivare/disattivare la modalità dark con un pulsante.
+- **Snackbar**: Notifiche visive vengono mostrate per confermare l'aggiunta e il completamento dei todo.
+- **Navigazione tra pagine**: Usa **React Router** per spostarsi tra i todo aperti e completati.
 
-In the project directory, you can run:
+## Struttura del progetto
 
-### `npm start`
+Ecco un esempio di file README.md per il tuo progetto in formato Markdown:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+markdown
+Copy code
+# Gestore Todo con Dark Mode
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Questo progetto è una semplice applicazione To-Do List sviluppata con **React** e **Material UI**, con la gestione di **todo aperti** e **todo completati**, supporto per la **modalità Dark Mode** e navigazione tra pagine tramite **React Router**.
 
-### `npm test`
+## Caratteristiche principali
+- **Gestione dei todo aperti**: Gli utenti possono aggiungere nuovi todo e visualizzare la lista di quelli ancora da completare.
+- **Gestione dei todo completati**: Una volta completati, i todo vengono spostati in una pagina separata.
+- **Dark Mode**: Gli utenti possono attivare/disattivare la modalità dark con un pulsante.
+- **Snackbar**: Notifiche visive vengono mostrate per confermare l'aggiunta e il completamento dei todo.
+- **Navigazione tra pagine**: Usa **React Router** per spostarsi tra i todo aperti e completati.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Struttura del progetto
 
-### `npm run build`
+src/ │ ├── components/ │ ├── Header.tsx // Header con navigazione e dark mode │ ├── Snackbar.tsx // Snackbar per notificare le azioni │ ├── TodoForm.tsx // Form per aggiungere nuovi todo │ ├── TodoItem.tsx // Componente che rappresenta un singolo todo │ ├── TodoList.tsx // Lista dei todo │ ├── context/ │ ├── TodoContext.tsx // Contesto per gestire i todo aperti e completati │ └── ThemeContext.tsx // Contesto per gestire il tema light/dark │ ├── pages/ │ ├── OpenTodosPage.tsx // Pagina per i todo aperti │ └── CompletedTodosPage.tsx// Pagina per i todo completati │ ├── App.tsx // Configurazione del router e layout generale └── index.tsx // Bootstrap dell'applicazione
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Requisiti
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Node.js** (v16+)
+- **npm** o **yarn**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installazione
 
-### `npm run eject`
+1. Clona questo repository:
+   ```bash
+   git clone https://github.com/tuo-username/todo-dark-mode.git
+   cd todo-dark-mode
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+2. Installa le dipendenze del progetto:
+    ```bash
+    npm install
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Avvia l'applicazione in modalità sviluppo:
+    ```bash
+    npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+L'app sarà disponibile su `http://localhost:3000`.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Librerie utilizzate
 
-## Learn More
+- **React**: Libreria frontend per la costruzione di interfacce utente.
+- **Material UI**: Libreria di componenti React per creare interfacce moderne e responsive.
+- **React Router**: Libreria per gestire la navigazione tra le pagine.
+- **React Context API**: Per la gestione globale dello stato, sia per i todo che per il tema.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Funzionalità
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Aggiunta di todo**  
+   Gli utenti possono aggiungere un nuovo todo dalla pagina principale. Il todo viene automaticamente aggiunto alla lista dei todo da completare.
+
+2. **Completamento e riapertura dei todo**  
+   Gli utenti possono marcare un todo come completato, il quale verrà spostato nella pagina dei todo completati. Allo stesso modo, un todo completato può essere riaperto e spostato di nuovo nella lista dei todo da completare.
+
+3. **Modalità Dark/Light**  
+   Cliccando sull'icona del tema nell'header, gli utenti possono passare dalla modalità chiara alla modalità scura e viceversa. L'icona cambia dinamicamente in base al tema attivo.
+
+4. **Navigazione tra le pagine**  
+   L'utente può navigare tra la lista dei todo da completare e quella dei todo completati usando i link nella barra di navigazione.
+
+## Screenshot
+
+### Modalità Light
+
+![Modalità Light](screenshot-light.png)
+
+### Modalità Dark
+
+![Modalità Dark](screenshot-dark.png)
