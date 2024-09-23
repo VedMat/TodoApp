@@ -35,8 +35,8 @@ Questo progetto è una semplice applicazione To-Do List sviluppata con **React**
 
 1. Clona questo repository:
    ```bash
-   git clone https://github.com/tuo-username/todo-dark-mode.git
-   cd todo-dark-mode
+   git clone https://github.com/VedMat/TodoApp.git
+   cd todo-app
 
 2. Installa le dipendenze del progetto:
     ```bash
