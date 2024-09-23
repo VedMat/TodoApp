@@ -26,10 +26,6 @@ Questo progetto è una semplice applicazione To-Do List sviluppata con **React**
 - **Snackbar**: Notifiche visive vengono mostrate per confermare l'aggiunta e il completamento dei todo.
 - **Navigazione tra pagine**: Usa **React Router** per spostarsi tra i todo aperti e completati.
 
-## Struttura del progetto
-
-src/ │ ├── components/ │ ├── Header.tsx // Header con navigazione e dark mode │ ├── Snackbar.tsx // Snackbar per notificare le azioni │ ├── TodoForm.tsx // Form per aggiungere nuovi todo │ ├── TodoItem.tsx // Componente che rappresenta un singolo todo │ ├── TodoList.tsx // Lista dei todo │ ├── context/ │ ├── TodoContext.tsx // Contesto per gestire i todo aperti e completati │ └── ThemeContext.tsx // Contesto per gestire il tema light/dark │ ├── pages/ │ ├── OpenTodosPage.tsx // Pagina per i todo aperti │ └── CompletedTodosPage.tsx// Pagina per i todo completati │ ├── App.tsx // Configurazione del router e layout generale └── index.tsx // Bootstrap dell'applicazione
-
 ## Requisiti
 
 - **Node.js** (v16+)
