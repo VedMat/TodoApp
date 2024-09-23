@@ -1,4 +1,4 @@
- Gestore Todo con Dark Mode
+# **Gestore Todo**
 
 Questo progetto è una semplice applicazione To-Do List sviluppata con **React** e **Material UI**, con la gestione di **todo aperti** e **todo completati**, supporto per la **modalità Dark Mode** e navigazione tra pagine tramite **React Router**.
 
@@ -52,33 +52,33 @@ src/ │ ├── components/ │ ├── Header.tsx // Header con navigazion
 
 L'app sarà disponibile su `http://localhost:3000`.
 
-## Librerie utilizzate
+## 📚 Librerie utilizzate
 
-- **React**: Libreria frontend per la costruzione di interfacce utente.
-- **Material UI**: Libreria di componenti React per creare interfacce moderne e responsive.
-- **React Router**: Libreria per gestire la navigazione tra le pagine.
-- **React Context API**: Per la gestione globale dello stato, sia per i todo che per il tema.
+- ⚛️ **React**: Libreria frontend per la costruzione di interfacce utente.
+- 🎨 **Material UI**: Libreria di componenti React per creare interfacce moderne e responsive.
+- 🧭 **React Router**: Libreria per gestire la navigazione tra le pagine.
+- 🔗 **React Context API**: Per la gestione globale dello stato, sia per i todo che per il tema.
 
-## Funzionalità
+## ✨ Funzionalità
 
-1. **Aggiunta di todo**  
+1. ✅ **Aggiunta di todo**  
    Gli utenti possono aggiungere un nuovo todo dalla pagina principale. Il todo viene automaticamente aggiunto alla lista dei todo da completare.
 
-2. **Completamento e riapertura dei todo**  
+2. 🔄 **Completamento e riapertura dei todo**  
    Gli utenti possono marcare un todo come completato, il quale verrà spostato nella pagina dei todo completati. Allo stesso modo, un todo completato può essere riaperto e spostato di nuovo nella lista dei todo da completare.
 
-3. **Modalità Dark/Light**  
+3. 🌙 **Modalità Dark/Light**  
    Cliccando sull'icona del tema nell'header, gli utenti possono passare dalla modalità chiara alla modalità scura e viceversa. L'icona cambia dinamicamente in base al tema attivo.
 
-4. **Navigazione tra le pagine**  
+4. 🧭 **Navigazione tra le pagine**  
    L'utente può navigare tra la lista dei todo da completare e quella dei todo completati usando i link nella barra di navigazione.
 
-## Screenshot
+## 📸 Screenshot
 
-### Modalità Light
+### 🌞 Modalità Light
 
 ![Modalità Light](screenshot-light.png)
 
-### Modalità Dark
+### 🌑 Modalità Dark
 
 ![Modalità Dark](screenshot-dark.png)
